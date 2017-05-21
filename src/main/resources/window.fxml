@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="345.0" prefWidth="348.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="main.java.ClientController">
+  <children>
+    <GridPane maxHeight="47.0" maxWidth="329.0" prefHeight="47.0" prefWidth="329.0" StackPane.alignment="TOP_CENTER">
+      <children>
+        <Label text="You" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Opponent" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label id="you_point" fx:id="you_points" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label fx:id="opponent_points" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <GridPane fx:id="game" alignment="CENTER" gridLinesVisible="true" maxHeight="214.0" maxWidth="204.0" prefHeight="214.0" prefWidth="204.0" style="-fx-border-color:black;&#10;-fx-background-fill: black, white ;&#10;-fx-background-insets: 0, 1 ;" StackPane.alignment="CENTER">
+      <children>
+        <ImageView fx:id="v_0_0" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <ImageView fx:id="v_0_1" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <ImageView fx:id="v_0_2" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <ImageView fx:id="v_1_0" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <ImageView fx:id="v_1_1" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <ImageView fx:id="v_1_2" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <ImageView fx:id="v_2_0" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <ImageView fx:id="v_2_1" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <ImageView fx:id="v_2_2" disable="false" fitHeight="69.0" fitWidth="69.0" onMouseClicked="#setImage" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <GridPane alignment="BOTTOM_CENTER" maxHeight="50.0" maxWidth="231.0" prefHeight="50.0" prefWidth="231.0" StackPane.alignment="BOTTOM_CENTER">
+      <children>
+        <Button fx:id="register" mnemonicParsing="false" onAction="#registerToGame" prefWidth="99.0" text="Register" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button fx:id="leave" mnemonicParsing="false" onAction="#leaveGame" prefWidth="115.0" text="Leave game" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="16.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <StackPane.margin>
+        <Insets bottom="30.0" />
+      </StackPane.margin>
+    </GridPane>
+  </children>
+</StackPane>
